@@ -1,9 +1,143 @@
 
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle
+}
+
+html, body {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
 
 h1 {
-	overflow: -webkit-marquee;
+	/*overflow: -webkit-marquee;*/
 	color: transparent;
 	-webkit-text-stroke: 1px #d81e06;
+}
+
+.nav-link {
+	padding: 1.4rem;
+	letter-spacing: .2rem;
+}
+
+.nav-link::before, .nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: 1.5rem;
+	right: 0;
+	width: 0;
+	height: .3rem;
+	transition: all .3s cubic-bezier(.18, .89, .6, 1);
+	background-color: #70994b;
+}
+
+.nav-link:hover::after {
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* =========================================== slide-control  */
+
+.slide-ctrl {
+	position: fixed ;
+	width: 2.2rem;
+	height: 1rem;
+    top: calc(50% - 10px);
+	padding: 1rem 0;
+    cursor: pointer
+}
+
+.slide-ctrl span {
+	position: absolute;
+	width: 0;
+	right: 0;
+	top: calc(50% - .4rem);
+    font-size: .7rem;
+	text-align: center;
+    overflow: hidden;
+	transform: translateX(100%);
+    opacity: .5
+}
+
+.slide-ctrl::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 70%;
+    left: 0;
+    top: 50%;
+    background-color: #1f1f22;
+}
+
+.slide-ctrl::after {
+	content: "";
+	position: absolute;
+	width: .5rem;
+    height: .5rem;
+    top: calc(50% - .25rem);
+	right: .1rem;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.slide-prev {
+	left: 3.6rem;
+}
+
+.slide-next {
+	right: 3.6rem;
+}
+
+.slide-ctrl:hover::after {
+	right: calc(100% - 12px);
+	transform: rotate(-180deg)
+}
+
+ .slide-ctrl:hover::before {
+	 left: 30%
+ }
+.slide-ctrl:hover span {
+	width: 100%
+}
+
+.slide-next span, .slide-next::after, .slide-next::before,
+.slide-ctrl span, .slide-ctrl::after, .slide-ctrl::before,
+.slide-next:hover span, .slide-next:hover::after, .slide-next:hover::before,
+.slide-ctrl:hover span, .slide-ctrl:hover::after, .slide-ctrl:hover::before {
+	transition: all .4s cubic-bezier(.07,.57,.09,.9);
+}
+
+.slide-next::after {
+	left: .1rem;
+}
+
+.slide-next::before {
+	left: 30%;
+}
+
+.slide-next:hover::before {
+	left: 0
+}
+
+.slide-next:hover::after {
+	left: calc(100% - 12px);
+	transform: rotate(270deg)
+}
+
+.slide-next span {
+	left: 0;
+	transform: translateX(-100%)
 }
 
 .button {
@@ -11,7 +145,7 @@ h1 {
 	display: inline-block;
 	background: 0 0;
 	text-align: center;
-	padding: 1.3rem 3.7rem 1.2rem;
+	padding: .65rem 1.8rem .6rem;
 	line-height: 1;
 	border: 0;
 	text-transform: lowercase;
@@ -118,6 +252,7 @@ html.no-touchevents .article-block .intrinsic a:hover .intrinsic__item {
 }
 
 /*============= btn-closed ===============*/
+
 .button-close {
 	visibility: visible;
 	position: fixed;
