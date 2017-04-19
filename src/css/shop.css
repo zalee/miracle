@@ -1,0 +1,51 @@
+body {
+    background-color: #00ceff;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-y;
+}
+
+header.top-head {
+    text-align: center;
+}
+
+.top-bar {
+    height: 20px;
+    background: #ccc;
+}
+
+.head-nav {
+    position: absolute;
+    width: 980px;
+    height: 540px;
+    top: 18px;
+    left: calc(50% - 460px);
+    z-index: 5;
+}
+
+.nav-img {
+    position: absolute;
+}
+
+#nav-home {
+    top: 50px;
+    left: calc(50% - 420px);
+    z-index: 1;
+}
+
+#nav-shop {
+    top: 60px;
+    left: calc(50% - 200px);
+    z-index: 4;
+}
+
+#nav-info {
+    top: 40px;
+    left: calc(50% + 80px);
+    z-index: 3;
+}
+
+#nav-blog {
+    top: 18px;
+    left: calc(50% - 10px);
+    z-index: 2;
+}
