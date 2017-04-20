@@ -9,6 +9,13 @@
 html, body {
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
+	-ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
 }
 
 a{
@@ -19,10 +26,16 @@ li{
 	list-style: none;
 }
 
-h1 {
-	/*overflow: -webkit-marquee;*/
+/*h1 {
 	color: transparent;
 	-webkit-text-stroke: 1px #d81e06;
+}*/
+
+.underline-link {
+    overflow: hidden;
+    display: inline-block;
+    padding-bottom: .08403rem;
+    position: relative
 }
 
 .nav-link {
@@ -251,7 +264,7 @@ html.no-touchevents .article-block .intrinsic a:hover .intrinsic__item {
     transition: .9s transform cubic-bezier(.19,1,.22,1),.9s -webkit-transform cubic-bezier(.19,1,.22,1)
 }
 
-/*============= btn-closed ===============*/
+/*============================================== btn-closed */
 
 .button-close {
 	visibility: visible;
