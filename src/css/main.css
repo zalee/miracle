@@ -15,10 +15,27 @@
     transition: transform .8s cubic-bezier(.19,1,.22,1),opacity .3s cubic-bezier(.95,.05,.795,.035),-webkit-transform .8s cubic-bezier(.19,1,.22,1)
 }
 
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dceaf6;
+    opacity: 0;
+    -webkit-transition: opacity .6s cubic-bezier(.19,1,.22,1);
+    transition: opacity .6s cubic-bezier(.19,1,.22,1);
+}
 
 .header.is-min {
     -webkit-transform: translate3d(0,-35px,0);
     transform: translate3d(0,-35px,0)
+}
+
+ .header.is-min:before {
+    opacity: 1;
 }
 
 .header-logo {
@@ -29,6 +46,9 @@
     width: 100%
 }
 
+.header span {
+    height: 1.1rem;
+}
 @media only screen and (min-width: 1024px) {
     .header {
         padding: 1.9rem 3.8rem .2rem;
@@ -50,4 +70,42 @@
         -webkit-transform: scale(.8);
         transform: scale(.8)
     }
+}
+
+@media only screen and (max-width: 414px) {
+    .header {
+        padding: .5rem;
+    }
+
+    .col-xs-2 {
+        flex-basis: auto;
+        max-width: 30%
+    }
+}
+
+.page-view .main-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    pointer-events: none;
+    background: rgba(0,0,0,.3);
+    z-index: 300;
+    -webkit-transition: opacity 1.5s ease-out .1s,visibility 1.5s ease-out .1s;
+    transition: opacity 1.5s ease-out .1s,visibility 1.5s ease-out .1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-home-fixed {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-home-fixed a {
+    margin: 20px;
 }
