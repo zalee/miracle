@@ -6,13 +6,15 @@
 	vertical-align: middle
 }
 
-html, body {
+html {
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	-ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
+body {
+    font-size: .7rem
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "brandon-grotesque", "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.1;
@@ -26,6 +28,18 @@ li{
 	list-style: none;
 }
 
+hr {
+    display: block;
+    width: 55px;
+    height: 6px;
+    margin: .6rem;
+    margin-left: 0;
+    background: #f85563;
+}
+
+.color {
+    color: #f85563
+}
 /*h1 {
 	color: transparent;
 	-webkit-text-stroke: 1px #d81e06;
@@ -208,7 +222,7 @@ li{
 	position: relative;
     min-width: 71px;
 	display: inline-block;
-	font-size: .8rem;
+	font-size: .7rem;
 	line-height: 1;
 	color: #1f1f22;
 	z-index: 3;
@@ -238,6 +252,7 @@ li{
 .button:hover span,
 .button:active::after,
 .button:active span {
+    /*font-size: .8rem;*/
     -webkit-transform: translate3d(-2px,-2px,0);
     transform: translate3d(-2px,-2px,0)
 }
@@ -267,12 +282,12 @@ li{
     overflow: hidden;
 }
 
-html.no-touchevents .article-block .intrinsic a:hover .intrinsic__item {
+.article-block .intrinsic a:hover .intrinsic-item {
     -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
-.article-block .intrinsic__item {
+.article-block .intrinsic-item {
     -webkit-transition: .9s -webkit-transform cubic-bezier(.19,1,.22,1);
     transition: .9s -webkit-transform cubic-bezier(.19,1,.22,1);
     transition: .9s transform cubic-bezier(.19,1,.22,1);

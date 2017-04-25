@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>photoShop丨zalee</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/ps.css">
+    <link rel="shoutcut icon" href="src/img/zalee.png">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar"></div>
+        <header class="top-head">
+             <div class="head-under">
+                <img src="src/img/example/header1.png" alt="">
+            </div>
+            <div class="head-over">
+                <img src="src/img/example/header.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-img" id="nav-home" >
+                        <img src="src/img/example/nav01.png" alt="back to home">
+                    </li>
+                    <li class="nav-img" id="nav-shop" >
+                        <img src="src/img/example/nav02_on.png" alt="go shopping">
+                    </li>
+                    <li class="nav-img" id="nav-info" >
+                        <img src="src/img/example/nav03.png" alt="about zalee">
+                    </li>
+                    <li class="nav-img" id="nav-blog" >
+                        <img src="src/img/example/nav04.png" alt="the blog">
+                    </li>
+                </ul>
+                <map name="navmap"> 
+                    <area shape="poly" coords="116,112,131,179,376,122,369,55,310,62,306,76,248,85,244,76" href="index.html" alt="home" class="home-hover">
+                    <area shape="poly" coords="207,160,214,172,380,189,374,123,207,160" href="./" target="_self" alt="shopping" class="shop-hover"> 
+                    <area shape="poly" coords="478,43,681,41,667,130,469,101" href="#" target="_self" alt="shop info" class="info-hover"> 
+                    <area shape="poly" coords="369,54,384,196,390,201,796,156,801,150,793,38,777,34,620,44,618,49,561,53,557,45,476,42" href="#" target="_self" alt="blog" class="blog-hover"> 
+                </map>
+                <div id="head-map"><img src="src/img/example/spacer.gif" alt="#" width="862" height="216" border="0" usemap="#navmap"></div>
+            </nav>
+        </header>
+        <article class="content">
+            <div class="slide-ctrl slide-prev">
+                <span>
+                    prev
+                </span>
+            </div>
+            <div class="slide-ctrl slide-next">
+                <span>
+                    next
+                </span>
+            </div>
+        </article>
+    </div>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/common.js"></script>
+</body>
+</html>

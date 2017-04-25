@@ -109,3 +109,23 @@
 .page-home-fixed a {
     margin: 20px;
 }
+
+.page-home .grid-item {
+    margin: 5rem 0;
+    width: 50%
+}
+
+.page-home .grid-item .item-content {
+    padding: 1.4rem 3.6rem;
+}
+
+.page-home .grid-item .item-content h2 {
+	/*color: transparent;
+	-webkit-text-stroke: 1px #7099b4;
+    font-size: .9rem*/
+    color: #1f1f22
+}
+
+.page-home .grid-item .item-content p {
+    margin: .8rem 0
+}

@@ -1,0 +1,83 @@
+body {
+    background-color: #2aadf3;
+    background-image: url(../img/example/bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+header.top-head {
+    position: absolute;
+    width: 862px;
+    left: calc(50% - 430px);
+    text-align: left;
+}
+
+.top-bar {
+    height: 25px;
+    background: #f1f1f1;
+}
+
+.head-under {
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+}
+.head-over {
+    position: absolute;
+    top: -10px;
+    z-index: 5;
+}
+
+.nav-img {
+    top: -10px;
+    position: absolute;
+    transform: rotate(0deg)
+}
+
+.nav-img.active {
+    margin-top: 6px;
+    transform: rotate(-10deg) translate(-10px, 20px);
+}
+
+.nav-img.active-even {
+    margin-left: -14px;
+     transform: rotate(10deg) translate(10px, 20px);
+}
+.nav-img, .nav-img.active, .nav-img.active-even  {
+    transition: all .3s ease-in-out
+}
+
+#nav-home {
+    left: 60px;
+    z-index: 2;
+}
+
+#nav-shop {
+    top: 60px;
+    left: 203px;;
+    z-index: 1;
+}
+
+#nav-info {
+    left: 465px;
+    z-index: 4;
+}
+
+#nav-blog {
+    top: 0;
+    left: 357px;
+    z-index: 3;
+}
+
+#head-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 862px;
+    height: 216px;
+    z-index: 8
+}
+
+map {
+    z-index: 10
+}
