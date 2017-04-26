@@ -47,4 +47,14 @@ $(document).ready(function() {
             $("#nav-blog").removeClass('active')
         }
     );
+
+    //  *******************************   scroll Event  **
+    $(document).scroll(function() {
+        var sHeight = $(document).scrollTop();
+        if(sHeight > 20 ){
+            $(".header").addClass("is-min");
+        }else{
+            $(".header").removeClass("is-min");
+        }
+    })
 });

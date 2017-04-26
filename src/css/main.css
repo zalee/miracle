@@ -15,7 +15,7 @@
     transition: transform .8s cubic-bezier(.19,1,.22,1),opacity .3s cubic-bezier(.95,.05,.795,.035),-webkit-transform .8s cubic-bezier(.19,1,.22,1)
 }
 
-.header:before {
+.header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -30,11 +30,12 @@
 }
 
 .header.is-min {
+    background: #fff;
     -webkit-transform: translate3d(0,-35px,0);
     transform: translate3d(0,-35px,0)
 }
 
- .header.is-min:before {
+.header.is-min:before {
     opacity: 1;
 }
 
@@ -128,4 +129,72 @@
 
 .page-home .grid-item .item-content p {
     margin: .8rem 0
+}
+
+.vertical-align-item {
+    text-align: center;
+}
+
+.mail.icon {
+    color: #000;
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1rem;
+    border-radius: .1rem;
+    border: solid .1rem #dceaf6;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.mail.icon:before {
+    content: '';
+    position: absolute;
+    left: .7rem;
+    top: -.4rem;
+    width: .1rem;
+    height: 1rem;
+    background-color: #dceaf6;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+}
+
+.mail.icon:after {
+    content: '';
+    position: absolute;
+    left: .6rem;
+    top: -.4rem;
+    width: .1rem;
+    height: 1rem;
+    background-color: #dceaf6;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+}
+
+.article-card:hover .mail.icon {
+    opacity: 1;
+    transform: rotate(360deg);
+    transition: transform .8s cubic-bezier(.19,1,.22,1),-webkit-transform .8s cubic-bezier(.19,1,.22,1)
+}
+
+/* ==================================  aside  */
+
+.aside {
+    position: fixed;
+    background: #fff;
+    cursor: initial;
+    padding: 0 1.68067rem;
+     width: 100vw;
+    height: 100vh; 
+    opacity: 0;
+    -webkit-transition: -webkit-transform 1.2s cubic-bezier(.19,1,.22,1);
+    transition: -webkit-transform 1.2s cubic-bezier(.19,1,.22,1);
+    transition: transform 1.2s cubic-bezier(.19,1,.22,1);
+    transition: transform 1.2s cubic-bezier(.19,1,.22,1),-webkit-transform 1.2s cubic-bezier(.19,1,.22,1);
+    overflow-x: hidden;
 }
