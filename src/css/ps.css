@@ -110,7 +110,7 @@ map {
 	  }
 	}
 	.col.col-full {
-	  width: 100%;
+	  	width: 100%;
       margin-top: 5rem
 	}
 
@@ -196,203 +196,77 @@ map {
 	  background-position: bottom right;
 	}
 
-	.block-split-image-1 {
+	.block-split-image {
 	  margin: 8rem auto 6rem;
 	}
-	.block-split-image-1 .block__content {
+	.block-split-image .block__content {
 	  background-color: rgba(103, 144, 138, 0.9);
 	}
-	.block-split-image-1 .block__content:hover + .block__image .part {
+	.block-split-image .block__content:hover + .block__image .part {
 	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
-	.block-split-image-1 .block__content:hover + .block__image .part-1 {
+	.block-split-image .block__content:hover + .block__image .part-1 {
 	  -webkit-transition-delay: 0.25s !important;
 	          transition-delay: 0.25s !important;
 	}
-	.block-split-image-1 .block__content:hover + .block__image .part-2 {
+	.block-split-image .block__content:hover + .block__image .part-2 {
 	  -webkit-transition-delay: 0.25s !important;
 	          transition-delay: 0.25s !important;
 	}
-	.block-split-image-1 .block__content:hover + .block__image .part-3 {
+	.block-split-image .block__content:hover + .block__image .part-3 {
 	  -webkit-transition-delay: 0.15s !important;
 	          transition-delay: 0.15s !important;
 	}
-	.block-split-image-1 .block__content:hover + .block__image .part-4 {
+	.block-split-image .block__content:hover + .block__image .part-4 {
 	  -webkit-transition-delay: 0.1s !important;
 	          transition-delay: 0.1s !important;
 	}
-	.block-split-image-1 .block__image .part {
+	.block-split-image .block__image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
 	  width: 240px;
 	  height: 180px;
 	  background-image: url(../img/nudes/nudes_09.jpg);
-      background-size: 480px 360px
+    background-size: 480px 360px
 	}
-	.block-split-image-1 .block__image .part-1 {
+	.block-split-image .block__image .part-1 {
 	  -webkit-transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
 	          transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
 	}
-	.block-split-image-1 .block__image .part-2 {
+	.block-split-image .block__image .part-2 {
 	  -webkit-transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
 	          transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
 	}
-	.block-split-image-1 .block__image .part-3 {
+	.block-split-image .block__image .part-3 {
 	  -webkit-transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
 	          transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
 	}
-	.block-split-image-1 .block__image .part-4 {
+	.block-split-image .block__image .part-4 {
 	  -webkit-transform: translate(70%, 73%) rotate3d(-1, 1, -1, 3deg);
 	          transform: translate(70%, 73%) rotate3d(-1, 1, -1, 3deg);
-	}
-
-	.block-split-image-2 {
-	  margin: 8rem auto;
-	}
-	.block-split-image-2 .block__content {
-	  background-color: rgba(122, 108, 115, 0.9);
-	}
-	.block-split-image-2 .block__content:hover + .block__image .part {
-	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-	.block-split-image-2 .block__content:hover + .block__image .part-1 {
-	  -webkit-transition-delay: 0.2s !important;
-	          transition-delay: 0.2s !important;
-	}
-	.block-split-image-2 .block__content:hover + .block__image .part-2 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image-2 .block__content:hover + .block__image .part-3 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image-2 .block__content:hover + .block__image .part-4 {
-	  -webkit-transition-delay: 0.15s !important;
-	          transition-delay: 0.15s !important;
 	}
 	.block-split-image-2 .block__image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
-	  width: 250px;
-	  height: 150px;
-	  background-image: url(https://unsplash.it/500/300?image=1044);
-	}
-	.block-split-image-2 .block__image .part-1 {
-	  -webkit-transform: translate(-74%, -66%) rotate3d(1, -1, -1, 3deg);
-	          transform: translate(-74%, -66%) rotate3d(1, -1, -1, 3deg);
-	}
-	.block-split-image-2 .block__image .part-2 {
-	  -webkit-transform: translate(73%, -65%) rotate3d(1, 1, -1, 3deg);
-	          transform: translate(73%, -65%) rotate3d(1, 1, -1, 3deg);
-	}
-	.block-split-image-2 .block__image .part-3 {
-	  -webkit-transform: translate(-73%, 59%) rotate3d(-1, -1, -1, 3deg);
-	          transform: translate(-73%, 59%) rotate3d(-1, -1, -1, 3deg);
-	}
-	.block-split-image-2 .block__image .part-4 {
-	  -webkit-transform: translate(77%, 60%) rotate3d(-1, 1, -1, 3deg);
-	          transform: translate(77%, 60%) rotate3d(-1, 1, -1, 3deg);
-	}
-
-	.block-split-image-3 {
-	  margin: 8rem auto;
-	}
-	.block-split-image-3 .block__content {
-	  background-color: rgba(150, 153, 199, 0.9);
-	}
-	.block-split-image-3 .block__content:hover + .block__image .part {
-	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-	.block-split-image-3 .block__content:hover + .block__image .part-1 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image-3 .block__content:hover + .block__image .part-2 {
-	  -webkit-transition-delay: 0.1s !important;
-	          transition-delay: 0.1s !important;
-	}
-	.block-split-image-3 .block__content:hover + .block__image .part-3 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image-3 .block__content:hover + .block__image .part-4 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
+	  width: 178px;
+	  height: 250px;
+	  background-image: url(../img/anime/luffy.jpg);
+		background-size: 356px 500px
 	}
 	.block-split-image-3 .block__image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
-	  width: 250px;
-	  height: 150px;
-	  background-image: url(https://unsplash.it/500/300?image=961);
-	}
-	.block-split-image-3 .block__image .part-1 {
-	  -webkit-transform: translate(-70%, -73%) rotate3d(1, -1, -1, 3deg);
-	          transform: translate(-70%, -73%) rotate3d(1, -1, -1, 3deg);
-	}
-	.block-split-image-3 .block__image .part-2 {
-	  -webkit-transform: translate(69%, -75%) rotate3d(1, 1, -1, 3deg);
-	          transform: translate(69%, -75%) rotate3d(1, 1, -1, 3deg);
-	}
-	.block-split-image-3 .block__image .part-3 {
-	  -webkit-transform: translate(-66%, 72%) rotate3d(-1, -1, -1, 3deg);
-	          transform: translate(-66%, 72%) rotate3d(-1, -1, -1, 3deg);
-	}
-	.block-split-image-3 .block__image .part-4 {
-	  -webkit-transform: translate(56%, 75%) rotate3d(-1, 1, -1, 3deg);
-	          transform: translate(56%, 75%) rotate3d(-1, 1, -1, 3deg);
-	}
-
-	.block-split-image-4 {
-	  margin: 8rem auto;
-	}
-	.block-split-image-4 .block__content {
-	  background-color: rgba(114, 164, 127, 0.9);
-	}
-	.block-split-image-4 .block__content:hover + .block__image .part {
-	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-	.block-split-image-4 .block__content:hover + .block__image .part-1 {
-	  -webkit-transition-delay: 0.2s !important;
-	          transition-delay: 0.2s !important;
-	}
-	.block-split-image-4 .block__content:hover + .block__image .part-2 {
-	  -webkit-transition-delay: 0.15s !important;
-	          transition-delay: 0.15s !important;
-	}
-	.block-split-image-4 .block__content:hover + .block__image .part-3 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image-4 .block__content:hover + .block__image .part-4 {
-	  -webkit-transition-delay: 0.2s !important;
-	          transition-delay: 0.2s !important;
+	  width: 178px;
+	  height: 250px;
+	  background-image: url(../img/anime/nami.jpg);
+		background-size: 356px 500px
 	}
 	.block-split-image-4 .block__image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
-	  width: 250px;
-	  height: 150px;
-	  background-image: url(https://unsplash.it/500/300?image=393);
-	}
-	.block-split-image-4 .block__image .part-1 {
-	  -webkit-transform: translate(-68%, -66%) rotate3d(1, -1, -1, 3deg);
-	          transform: translate(-68%, -66%) rotate3d(1, -1, -1, 3deg);
-	}
-	.block-split-image-4 .block__image .part-2 {
-	  -webkit-transform: translate(64%, -59%) rotate3d(1, 1, -1, 3deg);
-	          transform: translate(64%, -59%) rotate3d(1, 1, -1, 3deg);
-	}
-	.block-split-image-4 .block__image .part-3 {
-	  -webkit-transform: translate(-68%, 67%) rotate3d(-1, -1, -1, 3deg);
-	          transform: translate(-68%, 67%) rotate3d(-1, -1, -1, 3deg);
-	}
-	.block-split-image-4 .block__image .part-4 {
-	  -webkit-transform: translate(69%, 71%) rotate3d(-1, 1, -1, 3deg);
-	          transform: translate(69%, 71%) rotate3d(-1, 1, -1, 3deg);
+	  width: 178px;
+	  height: 250px;
+	  background-image: url(../img/anime/zoro.jpg);
+		background-size: 356px 500px
 	}
