@@ -87,13 +87,13 @@ map {
 	}
 
 
-	.pen__subheading {
+	.pen-subheading {
 	  margin-bottom: 0;
 	}
-	.pen__subheading a {
+	.pen-subheading a {
 	  color: #b280c4;
 	}
-	.pen__subheading a:hover, .pen__subheading a:focus {
+	.pen-subheading a:hover, .pen-subheading a:focus {
 	  color: #d2b4dc;
 	}
 
@@ -125,45 +125,52 @@ map {
 	  -webkit-perspective: 50px;
 	          perspective: 50px;
 	}
-	.block-split-image .block__content {
+	.block-split-image .block-content {
 	  position: relative;
 	  display: inline-block;
-	  z-index: 1;
+		max-width: 14rem;
+		min-height: 12rem;
+	  z-index: 9;
+		margin-top: 3rem;
+		margin-left: -3rem;
 	  padding: 3rem 1.5rem;
 	  -webkit-transition: 0.25s ease-in-out;
 	  transition: 0.25s ease-in-out;
 	}
-	.block-split-image .block__content h2 {
+	.block-split-image-1 .block-content {
+		margin: 0
+	}
+	.block-split-image .block-content h2 {
 	  margin: 0;
 	}
-	.block-split-image .block__content:hover {
+	.block-split-image .block-content:hover {
 	  opacity: 0;
 	  -webkit-transform: translateY(-15px);
 	          transform: translateY(-15px);
 	}
-	.block-split-image .block__content:hover + .block__image {
+	.block-split-image .block-content:hover + .block-image {
 	  -webkit-transition-duration: 0.5s;
 	          transition-duration: 0.5s;
 	  -webkit-transform: rotate3d(0, 0, 0, 0deg) !important;
 	          transform: rotate3d(0, 0, 0, 0deg) !important;
 	}
-	.block-split-image .block__content:hover + .block__image .part-1 {
+	.block-split-image .block-content:hover + .block-image .part-1 {
 	  -webkit-transform: translate(-50%, -50%);
 	          transform: translate(-50%, -50%);
 	}
-	.block-split-image .block__content:hover + .block__image .part-2 {
+	.block-split-image .block-content:hover + .block-image .part-2 {
 	  -webkit-transform: translate(50%, -50%);
 	          transform: translate(50%, -50%);
 	}
-	.block-split-image .block__content:hover + .block__image .part-3 {
+	.block-split-image .block-content:hover + .block-image .part-3 {
 	  -webkit-transform: translate(-50%, 50%);
 	          transform: translate(-50%, 50%);
 	}
-	.block-split-image .block__content:hover + .block__image .part-4 {
+	.block-split-image .block-content:hover + .block-image .part-4 {
 	  -webkit-transform: translate(50%, 50%);
 	          transform: translate(50%, 50%);
 	}
-	.block-split-image .block__image {
+	.block-split-image .block-image {
 	  position: absolute;
 	  top: 0;
 	  right: 0;
@@ -175,54 +182,56 @@ map {
 	  -webkit-transition: 5s ease-in-out;
 	  transition: 5s ease-in-out;
 	}
-	.block-split-image .block__image .part {
+	.block-split-image .block-image .part {
 	  position: absolute;
 	  top: 50%;
 	  left: 50%;
 	  background-repeat: no-repeat;
+		z-index: 8;
+		overflow: hidden;
 	  -webkit-transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	  transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
-	.block-split-image .block__image .part-1 {
+	.block-split-image .block-image .part-1 {
 	  background-position: top left;
 	}
-	.block-split-image .block__image .part-2 {
+	.block-split-image .block-image .part-2 {
 	  background-position: top right;
 	}
-	.block-split-image .block__image .part-3 {
+	.block-split-image .block-image .part-3 {
 	  background-position: bottom left;
 	}
-	.block-split-image .block__image .part-4 {
+	.block-split-image .block-image .part-4 {
 	  background-position: bottom right;
 	}
 
 	.block-split-image {
 	  margin: 8rem auto 6rem;
 	}
-	.block-split-image .block__content {
-	  background-color: rgba(103, 144, 138, 0.9);
+	.block-split-image .block-content {
+	  background-color: rgba(168, 212, 242, 0.8);
 	}
-	.block-split-image .block__content:hover + .block__image .part {
+	.block-split-image .block-content:hover + .block-image .part {
 	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
-	.block-split-image .block__content:hover + .block__image .part-1 {
+	.block-split-image .block-content:hover + .block-image .part-1 {
 	  -webkit-transition-delay: 0.25s !important;
 	          transition-delay: 0.25s !important;
 	}
-	.block-split-image .block__content:hover + .block__image .part-2 {
+	.block-split-image .block-content:hover + .block-image .part-2 {
 	  -webkit-transition-delay: 0.25s !important;
 	          transition-delay: 0.25s !important;
 	}
-	.block-split-image .block__content:hover + .block__image .part-3 {
+	.block-split-image .block-content:hover + .block-image .part-3 {
 	  -webkit-transition-delay: 0.15s !important;
 	          transition-delay: 0.15s !important;
 	}
-	.block-split-image .block__content:hover + .block__image .part-4 {
+	.block-split-image .block-content:hover + .block-image .part-4 {
 	  -webkit-transition-delay: 0.1s !important;
 	          transition-delay: 0.1s !important;
 	}
-	.block-split-image .block__image .part {
+	.block-split-image .block-image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
 	  width: 240px;
@@ -230,23 +239,23 @@ map {
 	  background-image: url(../img/nudes/nudes_09.jpg);
     background-size: 480px 360px
 	}
-	.block-split-image .block__image .part-1 {
+	.block-split-image .block-image .part-1 {
 	  -webkit-transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
 	          transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
 	}
-	.block-split-image .block__image .part-2 {
+	.block-split-image .block-image .part-2 {
 	  -webkit-transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
 	          transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
 	}
-	.block-split-image .block__image .part-3 {
+	.block-split-image .block-image .part-3 {
 	  -webkit-transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
 	          transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
 	}
-	.block-split-image .block__image .part-4 {
-	  -webkit-transform: translate(70%, 73%) rotate3d(-1, 1, -1, 3deg);
-	          transform: translate(70%, 73%) rotate3d(-1, 1, -1, 3deg);
+	.block-split-image .block-image .part-4 {
+	  -webkit-transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
+	          transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
 	}
-	.block-split-image-2 .block__image .part {
+	.block-split-image-2 .block-image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
 	  width: 178px;
@@ -254,7 +263,7 @@ map {
 	  background-image: url(../img/anime/luffy.jpg);
 		background-size: 356px 500px
 	}
-	.block-split-image-3 .block__image .part {
+	.block-split-image-3 .block-image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
 	  width: 178px;
@@ -262,7 +271,7 @@ map {
 	  background-image: url(../img/anime/nami.jpg);
 		background-size: 356px 500px
 	}
-	.block-split-image-4 .block__image .part {
+	.block-split-image-4 .block-image .part {
 	  margin-left: -125px;
 	  margin-top: -75px;
 	  width: 178px;
