@@ -1,281 +1,295 @@
 body {
-    background-color: #2aadf3;
-    background-image: url(../img/example/bg.jpg);
-    background-repeat: repeat-y;
-    background-position: center top;
+	background-color: #2aadf3;
+	background-image: url(../img/example/bg.jpg);
+	background-repeat: repeat;
+	background-position: center top;
 }
 
 header.top-head {
-    position: absolute;
-    width: 862px;
-    left: calc(50% - 430px);
-    text-align: left;
+	position: absolute;
+	width: 862px;
+	left: calc(50% - 430px);
+	text-align: left;
 }
 
 .top-bar {
-    height: 25px;
-    background: #f1f1f1;
+	height: 15px;
+	background: #f1f1f1;
 }
 
 .head-under {
-    position: absolute;
-    top: -10px;
-    z-index: -1;
+	position: absolute;
+	top: -10px;
+	z-index: -1;
 }
 .head-over {
-    position: absolute;
-    top: -10px;
-    z-index: 5;
+	position: absolute;
+	top: -10px;
+	z-index: 5;
 }
 
 .nav-img {
-    top: -10px;
-    position: absolute;
-    transform: rotate(0deg)
+	top: -10px;
+	position: absolute;
+	transform: rotate(0deg)
 }
 
 .nav-img.active {
-    margin-top: 6px;
-    transform: rotate(-10deg) translate(-10px, 20px);
+	margin-top: 6px;
+	transform: rotate(-10deg) translate(-10px, 20px);
 }
 
 .nav-img.active-even {
-    margin-left: -14px;
-     transform: rotate(10deg) translate(10px, 20px);
+	margin-left: -14px;
+		transform: rotate(10deg) translate(10px, 20px);
 }
 .nav-img, .nav-img.active, .nav-img.active-even  {
-    transition: all .3s ease-in-out
+	transition: all .3s ease-in-out
 }
 
 #nav-home {
-    left: 60px;
-    z-index: 2;
+	left: 60px;
+	z-index: 2;
 }
 
 #nav-shop {
-    top: 60px;
-    left: 203px;;
-    z-index: 1;
+	top: 60px;
+	left: 203px;;
+	z-index: 1;
 }
 
 #nav-info {
-    left: 465px;
-    z-index: 4;
+	left: 465px;
+	z-index: 4;
 }
 
 #nav-blog {
-    top: 0;
-    left: 357px;
-    z-index: 3;
+	top: 0;
+	left: 357px;
+	z-index: 3;
 }
 
 #head-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 862px;
-    height: 216px;
-    z-index: 8
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 862px;
+	height: 216px;
+	z-index: 8
 }
 
 map {
-    z-index: 10
+	z-index: 10
 }
 
-	img {
-	  max-width: 100%;
-	}
+img {
+	max-width: 100%;
+}
 
 
-	.pen-subheading {
-	  margin-bottom: 0;
-	}
-	.pen-subheading a {
-	  color: #b280c4;
-	}
-	.pen-subheading a:hover, .pen-subheading a:focus {
-	  color: #d2b4dc;
-	}
+.pen-subheading {
+	margin-bottom: 0;
+}
+.pen-subheading a {
+	color: #b280c4;
+}
+.pen-subheading a:hover, .pen-subheading a:focus {
+	color: #d2b4dc;
+}
 
+@media (min-width: 800px) {
 	.col {
-	  padding: 1rem;
+		width: 50%;
+		float: left;
 	}
-	@media (min-width: 800px) {
-	  .col {
-	    width: 50%;
-	    float: left;
-	  }
-	  .col:nth-of-type(2n+1) {
-	    clear: left;
-	  }
+	.col:nth-of-type(2n+1) {
+		clear: left;
 	}
-	.col.col-full {
-	  	width: 100%;
-      margin-top: 5rem
-	}
+}
+.col.col-full {
+		position: absolute;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		height: 75%;
+		transform: translateY(-50%);
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+}
 
-	.main {
-	  overflow: hidden;
-	}
+.main {
+	overflow: hidden;
+}
 
-	.block-split-image {
-	  position: relative;
-	  max-width: 400px;
-	  text-align: center;
-	  -webkit-perspective: 50px;
-	          perspective: 50px;
-	}
-	.block-split-image .block-content {
-	  position: relative;
-	  display: inline-block;
-		max-width: 14rem;
-		min-height: 12rem;
-	  z-index: 9;
-		margin-top: 3rem;
-		margin-left: -3rem;
-	  padding: 3rem 1.5rem;
-	  -webkit-transition: 0.25s ease-in-out;
-	  transition: 0.25s ease-in-out;
-	}
-	.block-split-image-1 .block-content {
-		margin: 0
-	}
-	.block-split-image .block-content h2 {
-	  margin: 0;
-	}
-	.block-split-image .block-content:hover {
-	  opacity: 0;
-	  -webkit-transform: translateY(-15px);
-	          transform: translateY(-15px);
-	}
-	.block-split-image .block-content:hover + .block-image {
-	  -webkit-transition-duration: 0.5s;
-	          transition-duration: 0.5s;
-	  -webkit-transform: rotate3d(0, 0, 0, 0deg) !important;
-	          transform: rotate3d(0, 0, 0, 0deg) !important;
-	}
-	.block-split-image .block-content:hover + .block-image .part-1 {
-	  -webkit-transform: translate(-50%, -50%);
-	          transform: translate(-50%, -50%);
-	}
-	.block-split-image .block-content:hover + .block-image .part-2 {
-	  -webkit-transform: translate(50%, -50%);
-	          transform: translate(50%, -50%);
-	}
-	.block-split-image .block-content:hover + .block-image .part-3 {
-	  -webkit-transform: translate(-50%, 50%);
-	          transform: translate(-50%, 50%);
-	}
-	.block-split-image .block-content:hover + .block-image .part-4 {
-	  -webkit-transform: translate(50%, 50%);
-	          transform: translate(50%, 50%);
-	}
-	.block-split-image .block-image {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-	  z-index: 0;
-	  -webkit-perspective: 50px;
-	          perspective: 50px;
-	  -webkit-transition: 5s ease-in-out;
-	  transition: 5s ease-in-out;
-	}
-	.block-split-image .block-image .part {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  background-repeat: no-repeat;
-		z-index: 8;
-		overflow: hidden;
-	  -webkit-transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	  transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	}
-	.block-split-image .block-image .part-1 {
-	  background-position: top left;
-	}
-	.block-split-image .block-image .part-2 {
-	  background-position: top right;
-	}
-	.block-split-image .block-image .part-3 {
-	  background-position: bottom left;
-	}
-	.block-split-image .block-image .part-4 {
-	  background-position: bottom right;
-	}
+.block-split-image {
+	position: relative;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 100vw;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	-webkit-perspective: 50px;
+					perspective: 50px;
+}
+.block-split-image .block-content {
+	position: relative;
+	display: inline-block;
+	max-width: 14rem;
+	min-height: 12rem;
+	z-index: 9;
+	margin-top: 3rem;
+	margin-left: -3rem;
+	padding: 3rem 1.5rem;
+	-webkit-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+.block-split-image-1 .block-content {
+	margin: 0
+}
+.block-split-image .block-content h2 {
+	margin: 0;
+}
+.block-split-image .block-content:hover {
+	opacity: 0;
+	-webkit-transform: translateY(-15px);
+					transform: translateY(-15px);
+}
+.block-split-image .block-content:hover + .block-image {
+	-webkit-transition-duration: 0.5s;
+					transition-duration: 0.5s;
+	-webkit-transform: rotate3d(0, 0, 0, 0deg) !important;
+					transform: rotate3d(0, 0, 0, 0deg) !important;
+}
+.block-split-image .block-content:hover + .block-image .part-1 {
+	-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+}
+.block-split-image .block-content:hover + .block-image .part-2 {
+	-webkit-transform: translate(50%, -50%);
+					transform: translate(50%, -50%);
+}
+.block-split-image .block-content:hover + .block-image .part-3 {
+	-webkit-transform: translate(-50%, 50%);
+					transform: translate(-50%, 50%);
+}
+.block-split-image .block-content:hover + .block-image .part-4 {
+	-webkit-transform: translate(50%, 50%);
+					transform: translate(50%, 50%);
+}
+.block-split-image .block-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	-webkit-perspective: 50px;
+					perspective: 50px;
+	-webkit-transition: 5s ease-in-out;
+	transition: 5s ease-in-out;
+}
+.block-split-image .block-image .part {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-repeat: no-repeat;
+	z-index: 8;
+	overflow: hidden;
+	-webkit-transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.block-split-image .block-image .part-1 {
+	background-position: top left;
+}
+.block-split-image .block-image .part-2 {
+	background-position: top right;
+}
+.block-split-image .block-image .part-3 {
+	background-position: bottom left;
+}
+.block-split-image .block-image .part-4 {
+	background-position: bottom right;
+}
 
-	.block-split-image {
-	  margin: 8rem auto 6rem;
-	}
-	.block-split-image .block-content {
-	  background-color: rgba(168, 212, 242, 0.8);
-	}
-	.block-split-image .block-content:hover + .block-image .part {
-	  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-	.block-split-image .block-content:hover + .block-image .part-1 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image .block-content:hover + .block-image .part-2 {
-	  -webkit-transition-delay: 0.25s !important;
-	          transition-delay: 0.25s !important;
-	}
-	.block-split-image .block-content:hover + .block-image .part-3 {
-	  -webkit-transition-delay: 0.15s !important;
-	          transition-delay: 0.15s !important;
-	}
-	.block-split-image .block-content:hover + .block-image .part-4 {
-	  -webkit-transition-delay: 0.1s !important;
-	          transition-delay: 0.1s !important;
-	}
-	.block-split-image .block-image .part {
-	  margin-left: -125px;
-	  margin-top: -75px;
-	  width: 240px;
-	  height: 180px;
-	  background-image: url(../img/nudes/nudes_09.jpg);
-    background-size: 480px 360px
-	}
-	.block-split-image .block-image .part-1 {
-	  -webkit-transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
-	          transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
-	}
-	.block-split-image .block-image .part-2 {
-	  -webkit-transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
-	          transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
-	}
-	.block-split-image .block-image .part-3 {
-	  -webkit-transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
-	          transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
-	}
-	.block-split-image .block-image .part-4 {
-	  -webkit-transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
-	          transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
-	}
-	.block-split-image-2 .block-image .part {
-	  margin-left: -125px;
-	  margin-top: -75px;
-	  width: 178px;
-	  height: 250px;
-	  background-image: url(../img/anime/luffy.jpg);
-		background-size: 356px 500px
-	}
-	.block-split-image-3 .block-image .part {
-	  margin-left: -125px;
-	  margin-top: -75px;
-	  width: 178px;
-	  height: 250px;
-	  background-image: url(../img/anime/nami.jpg);
-		background-size: 356px 500px
-	}
-	.block-split-image-4 .block-image .part {
-	  margin-left: -125px;
-	  margin-top: -75px;
-	  width: 178px;
-	  height: 250px;
-	  background-image: url(../img/anime/zoro.jpg);
-		background-size: 356px 500px
-	}
+.block-split-image {
+	margin: 8rem auto 6rem;
+}
+.block-split-image .block-content {
+	background-color: rgba(168, 212, 242, .8);
+}
+.block-split-image .block-content:hover + .block-image .part {
+	-webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+					transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.block-split-image .block-content:hover + .block-image .part-1 {
+	-webkit-transition-delay: 0.25s !important;
+					transition-delay: 0.25s !important;
+}
+.block-split-image .block-content:hover + .block-image .part-2 {
+	-webkit-transition-delay: 0.25s !important;
+					transition-delay: 0.25s !important;
+}
+.block-split-image .block-content:hover + .block-image .part-3 {
+	-webkit-transition-delay: 0.15s !important;
+					transition-delay: 0.15s !important;
+}
+.block-split-image .block-content:hover + .block-image .part-4 {
+	-webkit-transition-delay: 0.1s !important;
+					transition-delay: 0.1s !important;
+}
+.block-split-image .block-image .part {
+	margin-left: -100px;
+	margin-top: -60px;
+	width: 240px;
+	height: 180px;
+	background-image: url(../img/nudes/nudes_09.jpg);
+	background-size: 480px 360px
+}
+.block-split-image .block-image .part-1 {
+	-webkit-transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
+					transform: translate(-63%, -68%) rotate3d(1, -1, -1, 3deg);
+}
+.block-split-image .block-image .part-2 {
+	-webkit-transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
+					transform: translate(72%, -68%) rotate3d(1, 1, -1, 3deg);
+}
+.block-split-image .block-image .part-3 {
+	-webkit-transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
+					transform: translate(-71%, 61%) rotate3d(-1, -1, -1, 3deg);
+}
+.block-split-image .block-image .part-4 {
+	-webkit-transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
+					transform: translate(70%, 71%) rotate3d(-1, 1, -1, 3deg);
+}
+.block-split-image-2 .block-image .part {
+	margin-left: -100px;
+	margin-top: -60px;
+	width: 178px;
+	height: 250px;
+	background-image: url(../img/anime/luffy.jpg);
+	background-size: 356px 500px
+}
+.block-split-image-3 .block-image .part {
+	margin-left: -100px;
+	margin-top: -60px;
+	width: 178px;
+	height: 250px;
+	background-image: url(../img/anime/nami.jpg);
+	background-size: 356px 500px
+}
+.block-split-image-4 .block-image .part {
+	margin-left: -100px;
+	margin-top: -60px;
+	width: 178px;
+	height: 250px;
+	background-image: url(../img/anime/zoro.jpg);
+	background-size: 356px 500px
+}
