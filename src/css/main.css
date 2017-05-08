@@ -229,5 +229,6 @@
     height: 30vw;
     margin-left: 6vw;
     background-image: url(../img/nudes/jingan.jpg);
+    background-repeat: no-repeat;
     background-size: 36vw auto;
 }
