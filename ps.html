@@ -113,57 +113,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<div class="col col-full">
-                    <div class="block-split-image block-split-image-2">
-                        <div class="block-content">
-                            <h2>
-                                比如有一块肉，英雄会把它分给别人，而海贼会拿来开宴会<br>
-                                <small>(hover me)</small>
-                            </h2>
-                        </div>
-                        <div class="block-image" data-orbit>
-                            <div class="part part-1"></div>
-                            <div class="part part-2"></div>
-                            <div class="part part-3"></div>
-                            <div class="part part-4"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-full">
-                    <div class="block-split-image block-split-image-3">
-                        <div class="block-content">
-                            <h2>
-                                人的烦恼，分什么大小<br>
-                                <small>(hover me)</small>
-                            </h2>
-                        </div>
-                        <div class="block-image" data-orbit>
-                            <div class="part part-1"></div>
-                            <div class="part part-2"></div>
-                            <div class="part part-3"></div>
-                            <div class="part part-4"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-full">
-                    <div class="block-split-image block-split-image-4">
-                        <div class="block-content">
-                            <h2>
-                                打架论什么头衔，胜者为王，就这么简单<br>
-                                <small>(hover me)</small>
-                            </h2>
-                        </div>
-                        <div class="block-image" data-orbit>
-                            <div class="part part-1"></div>
-                            <div class="part part-2"></div>
-                            <div class="part part-3"></div>
-                            <div class="part part-4"></div>
-                        </div>
-                    </div>
-                </div>-->
             </main>
         </article>
     </div>
@@ -213,25 +162,6 @@
 
     // Start it up
     orbit.init();
-
-    //  translate 
-    var pieceWidth = $('.block-split-image').width(),
-        fullWidth = -pieceWidth * 3;
-
-    $(".slide-next").on('click', function(n,c) {
-        $(".col-full").offset(function(n,c){
-    	newPos = new Object();
-        newPos.left = c.left > fullWidth ? c.left - pieceWidth : c.left;
-        return newPos;
-    });
-})
-    $(".slide-prev").on('click', function(n,c) {
-        $(".col-full").offset(function(n,c){
-    	newPos = new Object();
-        newPos.left = c.left < 0 ? c.left + pieceWidth : c.left;
-        return newPos;
-    });
-})
     </script>
 </body>
 </html>
