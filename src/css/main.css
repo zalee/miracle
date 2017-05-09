@@ -209,16 +209,16 @@
 .grid-3 .intrinsic-item {
     position: relative;
     width: 40vw;
-    height: 36vw;
+    height: 40vw;
     margin-left: 6vw;
-    background-image: url(../img/nudes/shadow1.jpg);
+    background-image: url(../img/nudes/dream.jpg);
     background-repeat: no-repeat;
     background-size: 40vw auto;
 }
 
 .grid-4.grid-item {
     position: absolute;
-    left: 54vw;
+    left: 60vw;
     top: 160vh;
     width: 40vw;
     height: 30vw;
@@ -227,7 +227,6 @@
     position: relative;
     width: 36vw;
     height: 30vw;
-    margin-left: 6vw;
     background-image: url(../img/nudes/jingan.jpg);
     background-repeat: no-repeat;
     background-size: 36vw auto;
